@@ -69,7 +69,7 @@ export default function Navigation() {
 
             {/* Logo */}
             <div className="flex-shrink-0">
-            <a href="http://localhost:5173/" target="_blank" rel="noopener noreferrer">
+            <a href="https://craigslist-redesigned.vercel.app/" target="_blank" rel="noopener noreferrer">
           <img src={FullLogo} alt="Logo" className="h-10 w-auto" />
             </a>
             </div>
