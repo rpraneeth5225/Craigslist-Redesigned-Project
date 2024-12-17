@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageSquare, X, Send, Maximize2, Minimize2, ChevronDown } from 'lucide-react';
+import { MessageSquare, X, Send, Maximize2, Minimize2 } from 'lucide-react';
 import Button from '../ui/Button';
 
 interface Message {
@@ -14,7 +14,7 @@ const initialMessages: Message[] = [
   {
     id: '1',
     type: 'assistant',
-    content: 'Hi! I\'m your newjersey.list assistant. I can help you find listings, create posts, or answer any questions you have.',
+    content: 'Hi! I\'m Kiara, your Craiglist Assistant. I can help you find listings, create posts, or answer any questions you have.',
     timestamp: new Date(),
   },
 ];
@@ -64,7 +64,7 @@ export default function AIAssistant() {
 
   const generateAIResponse = (userInput: string): string => {
     const input = userInput.toLowerCase();
-    if (input.includes('looking for') || input.includes('search')) {
+    if (input.includes('looking for') || input.includes('search') || input.includes('find')) {
       return "I can help you find what you're looking for! Could you provide more details about what you're interested in? For example, the category, price range, or location?";
     }
     if (input.includes('post') || input.includes('sell')) {
