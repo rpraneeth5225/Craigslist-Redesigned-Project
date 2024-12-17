@@ -62,7 +62,7 @@ export default function PostModal({ isOpen, onClose, onSuccess }: PostModalProps
 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
-      <div className="relative bg-white rounded-lg p-6 w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+      <div className="relative bg-white rounded-lg p-6 w-full max-w-full max-h-full overflow-y-auto">
         <button
           onClick={onClose}
           className="absolute right-4 top-4 text-gray-400 hover:text-gray-500"

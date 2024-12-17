@@ -7,6 +7,8 @@ import LoginModal from '../auth/LoginModal';
 import PostModal from '../auth/PostModal';
 import Sidebar from './Sidebar';
 import Categories from './Categories';
+import FullLogo from '../Full_Logo.png';
+
 
 export default function Navigation() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
@@ -67,8 +69,9 @@ export default function Navigation() {
 
             {/* Logo */}
             <div className="flex-shrink-0">
-            <img src="../Full_Logo.png" alt="Logo" className="h-10 w-auto" />
-            
+            <a href="http://localhost:5173/" target="_blank" rel="noopener noreferrer">
+          <img src={FullLogo} alt="Logo" className="h-10 w-auto" />
+            </a>
             </div>
 
             {/* Categories */}

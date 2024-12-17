@@ -4,7 +4,6 @@ import Button from '../ui/Button';
 import { useState, useEffect } from 'react';
 import LoginModal from '../auth/LoginModal';
 import PostModal from '../auth/PostModal';
-import { Logo } from '../Full_Logo.png'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,9 +54,9 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          {/* <div className="flex-shrink-0">
             <Logo />
-          </div>
+          </div> */}
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4 flex-1 justify-end">
